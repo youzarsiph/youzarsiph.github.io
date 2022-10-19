@@ -1,55 +1,47 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import type { NextPage } from "next";
+import Navbar from "../components/navbar";
+import Container from "../components/container";
+import urlPatters from "../urls";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Youzarsiph | Yousef Abu </title>
+        <title>Youzarsiph | Yousef Abu Shanab </title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.tsx</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+      <Navbar id="nav" />
+      <Container>
+        <main>
+          <div className="rounded-xl border border-yellow-500 bg-white p-8 tracking-tighter shadow-lg">
+            <h1 className="mb-8 text-5xl font-extrabold lg:text-9xl">
+              Youzarsiph
+            </h1>
+            <p className="mb-8 text-2xl font-light">
+              Hello, my name is Yousef Abu Shanab, I am a software engineer, I
+              love to learn and build.
             </p>
-          </a>
-        </div>
-      </main>
+            <div className="grid flex-col items-center gap-4 lg:flex lg:flex-row">
+              <a
+                role={"button"}
+                className="btn btn-primary"
+                href={urlPatters["github"]}
+              >
+                Github
+              </a>
+              <a
+                role={"button"}
+                className="btn btn-secondary"
+                href={urlPatters["linkedin"]}
+              >
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </main>
+      </Container>
     </div>
   );
 };
