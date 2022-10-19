@@ -7,7 +7,7 @@ const Projects: NextPage = () => {
   let projects = [
     {
       name: "Evolution UI",
-      demo: "https://youzarsiph.github.io/next-vvolution/",
+      demo: "https://youzarsiph.github.io/next-evolution/",
       github: "https://github.com/youzarsiph/next-evolution/",
       description: "React Component Library for building elegant UIs",
     },
@@ -61,7 +61,7 @@ const Projects: NextPage = () => {
               Here is some of my projects.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 mb-8">
             {projects.map((project) => {
               return (
                 <div
