@@ -81,7 +81,7 @@ class Navbar extends Component<Properties, State> {
               id={this.props.id}
             />
             <ul className="mt-4 hidden flex-col items-start gap-4 rounded-xl border border-yellow-500 bg-white py-4 peer-checked:flex lg:mt-0 lg:flex lg:flex-row lg:items-center lg:border-none lg:bg-inherit lg:py-0">
-              <li className="flex items-center gap-2 px-4 py-2 text-lg font-semibold">
+              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -98,7 +98,7 @@ class Navbar extends Component<Properties, State> {
                 </svg>
                 <Link href={"/"}>Home</Link>
               </li>
-              <li className="flex items-center gap-2 px-4 py-2 text-lg font-semibold">
+              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -115,7 +115,7 @@ class Navbar extends Component<Properties, State> {
                 </svg>
                 <Link href={urlPatters["projects"]}>Projects</Link>
               </li>
-              <li className="flex items-center gap-2 px-4 py-2 text-lg font-semibold">
+              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -132,7 +132,7 @@ class Navbar extends Component<Properties, State> {
                 </svg>
                 <a href={urlPatters["github"]}>Github</a>
               </li>
-              <li className="flex items-center gap-2 px-4 py-2 text-lg font-semibold">
+              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
                 <svg
                   className="h-6 w-6"
                   fill="none"

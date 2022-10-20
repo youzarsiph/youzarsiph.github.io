@@ -26,7 +26,7 @@ const Home: NextPage = () => {
             <div className="grid flex-col items-center gap-4 lg:flex lg:flex-row">
               <a
                 role={"button"}
-                className="btn btn-primary flex items-center gap-2"
+                className="btn btn-primary flex items-center gap-4"
                 href={urlPatters["github"]}
               >
                 <svg
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
               </a>
               <a
                 role={"button"}
-                className="btn btn-secondary flex items-center gap-2"
+                className="btn btn-secondary flex items-center gap-4"
                 href={urlPatters["linkedin"]}
               >
                 <svg
