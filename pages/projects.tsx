@@ -61,14 +61,14 @@ const Projects: NextPage = () => {
               Here is some of my projects.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 mb-8">
+          <div className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
             {projects.map((project) => {
               return (
                 <div
                   key={project.name}
                   className="rounded-xl border border-yellow-500 bg-white p-8 tracking-tighter shadow-lg"
                 >
-                  <h2 className="mb-8 text-3xl sm:text-4xl font-extrabold tracking-tighter text-slate-600">
+                  <h2 className="mb-8 text-3xl font-extrabold tracking-tighter text-slate-600 sm:text-4xl">
                     {project.name}
                   </h2>
                   <p className="mb-8 text-xl">{project.description}</p>

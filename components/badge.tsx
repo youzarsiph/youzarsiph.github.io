@@ -9,7 +9,9 @@ class Badge extends Component<Properties> {
     };
 
     return (
-      <span className={`badge ${colors[this.props.color]}`}>{this.props.children}</span>
+      <span className={`badge ${colors[this.props.color]}`}>
+        {this.props.children}
+      </span>
     );
   }
 }
