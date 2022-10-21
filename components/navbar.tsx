@@ -25,15 +25,15 @@ class Navbar extends Component<Properties, State> {
   render(): ReactNode {
     return (
       <header className="mb-8">
-        <nav className="flex flex-col items-center justify-between border-b border-yellow-500 bg-yellow-400 px-6 py-4 shadow-lg lg:flex-row">
+        <nav className="navbar">
           <div className="flex w-full items-center justify-between lg:w-auto">
             <span className="text-xl font-bold">
-              <Link href={urlPatters["home"]}>Youzarsiph</Link>
+              <Link href={urlPatters["home"]}>youzarsiph</Link>
             </span>
             <button
               type="button"
               onClick={this.onClick}
-              className="rounded border border-transparent hover:bg-white focus:border-yellow-500 focus:bg-white focus:ring focus:ring-white active:scale-95 lg:hidden"
+              className="navbar-toggle"
             >
               <label
                 htmlFor={this.props.id}
@@ -80,8 +80,8 @@ class Navbar extends Component<Properties, State> {
               className="peer sr-only"
               id={this.props.id}
             />
-            <ul className="mt-4 hidden flex-col items-start gap-4 rounded-xl border border-yellow-500 bg-white py-4 peer-checked:flex lg:mt-0 lg:flex lg:flex-row lg:items-center lg:border-none lg:bg-inherit lg:py-0">
-              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
+            <ul className="navbar-menu">
+              <li className="navbar-item">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -96,9 +96,9 @@ class Navbar extends Component<Properties, State> {
                     d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                   ></path>
                 </svg>
-                <Link href={"/"}>Home</Link>
+                <Link href={urlPatters["home"]}>Home</Link>
               </li>
-              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
+              <li className="navbar-item">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -115,7 +115,7 @@ class Navbar extends Component<Properties, State> {
                 </svg>
                 <Link href={urlPatters["projects"]}>Projects</Link>
               </li>
-              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
+              <li className="navbar-item">
                 <svg
                   className="h-6 w-6"
                   fill="none"
@@ -132,7 +132,7 @@ class Navbar extends Component<Properties, State> {
                 </svg>
                 <a href={urlPatters["github"]}>Github</a>
               </li>
-              <li className="flex w-full items-center gap-2 rounded border border-transparent px-4 py-2 text-lg font-semibold hover:border-yellow-500 hover:bg-white active:scale-95 lg:w-auto">
+              <li className="navbar-item">
                 <svg
                   className="h-6 w-6"
                   fill="none"

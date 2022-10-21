@@ -1,10 +1,22 @@
 import Head from "next/head";
+import urlPatters from "../urls";
 import type { NextPage } from "next";
+import Badge from "../components/badge";
 import Navbar from "../components/navbar";
 import Container from "../components/container";
-import urlPatters from "../urls";
 
 const Home: NextPage = () => {
+  const skills = [
+    "Python",
+    "Django",
+    "SQL",
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "NextJS",
+  ];
   return (
     <div>
       <Head>
@@ -15,7 +27,7 @@ const Home: NextPage = () => {
       <Navbar id="nav" />
       <Container>
         <main>
-          <div className="rounded-xl border border-yellow-500 bg-white p-8 tracking-tighter shadow-lg">
+          <div className="mb-8 rounded-xl border border-yellow-500 bg-white p-8 tracking-tighter shadow-lg">
             <h1 className="mb-8 text-5xl font-extrabold lg:text-9xl">
               Youzarsiph
             </h1>
@@ -67,6 +79,21 @@ const Home: NextPage = () => {
                 LinkedIn
               </a>
             </div>
+          </div>
+          <h1 className="mb-8 text-5xl font-extrabold lg:text-7xl">
+            My Skills
+          </h1>
+          <div className="mb-8 flex flex-wrap items-center gap-4">
+            {skills.map((skill) => {
+              return (
+                <Badge
+                  key={skill}
+                  color={Math.random() > 0.5 ? "primary" : "secondary"}
+                >
+                  {skill}
+                </Badge>
+              );
+            })}
           </div>
         </main>
       </Container>
