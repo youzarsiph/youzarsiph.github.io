@@ -18,7 +18,7 @@ const Projects: NextPage = () => {
       description: "A basic WYSIWYG editor based on TipTap",
     },
     {
-      name: "youzarsiph.github.io",
+      name: "youzarsiph. github.io",
       demo: "https://youzarsiph.github.io/",
       github: "https://github.com/youzarsiph/youzarsiph.github.io/",
       description: "My Github Pages",
@@ -53,7 +53,7 @@ const Projects: NextPage = () => {
       <Navbar id="nav" />
       <Container>
         <main>
-          <div className="mb-8 rounded-xl border border-yellow-500 bg-white p-8 tracking-tighter shadow-lg">
+          <div className="mb-8 rounded-xl border-2 border-yellow-500 p-8 tracking-tighter shadow-lg">
             <h1 className="mb-8 text-5xl font-extrabold lg:text-9xl">
               Projects
             </h1>
@@ -66,9 +66,9 @@ const Projects: NextPage = () => {
               return (
                 <div
                   key={project.name}
-                  className="rounded-xl border border-yellow-500 bg-white p-8 tracking-tighter shadow-lg"
+                  className="rounded-xl border-2 border-yellow-500 p-8 tracking-tighter shadow-lg"
                 >
-                  <h2 className="mb-8 text-3xl font-extrabold tracking-tighter text-slate-600 sm:text-4xl">
+                  <h2 className="mb-8 text-3xl font-extrabold tracking-tighter sm:text-5xl">
                     {project.name}
                   </h2>
                   <p className="mb-8 text-xl">{project.description}</p>

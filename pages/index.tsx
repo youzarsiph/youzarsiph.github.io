@@ -1,5 +1,5 @@
 import Head from "next/head";
-import urlPatters from "../urls";
+import urlPatterns from "../urls";
 import type { NextPage } from "next";
 import Badge from "../components/badge";
 import Navbar from "../components/navbar";
@@ -27,7 +27,7 @@ const Home: NextPage = () => {
       <Navbar id="nav" />
       <Container>
         <main>
-          <div className="mb-8 rounded-xl border border-yellow-500 bg-white p-8 tracking-tighter shadow-lg">
+          <div className="mb-8 rounded-xl border-2 border-yellow-500 p-8 tracking-tighter shadow-lg">
             <h1 className="mb-8 text-5xl font-extrabold lg:text-9xl">
               Youzarsiph
             </h1>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
               <a
                 role={"button"}
                 className="btn btn-primary flex items-center gap-4"
-                href={urlPatters["github"]}
+                href={urlPatterns["github"]}
               >
                 <svg
                   className="h-6 w-6"
@@ -60,7 +60,7 @@ const Home: NextPage = () => {
               <a
                 role={"button"}
                 className="btn btn-secondary flex items-center gap-4"
-                href={urlPatters["linkedin"]}
+                href={urlPatterns["linkedin"]}
               >
                 <svg
                   className="h-6 w-6"

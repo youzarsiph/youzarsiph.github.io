@@ -7,7 +7,7 @@ interface Properties {
 }
 
 export interface State {
-  collapsed?: boolean;
+  checked?: boolean;
 }
 
 export default Properties;
