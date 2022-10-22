@@ -8,11 +8,19 @@ class Badge extends Component<Properties> {
       secondary: "badge-secondary",
     };
 
-    return (
-      <span className={`badge ${colors[this.props.color]}`}>
-        {this.props.children}
-      </span>
-    );
+    let modifier: string;
+
+    if (typeof this.props.color === "string") {
+      if (this.props.color === "primary") {
+        modifier = colors.primary;
+      } else {
+        modifier = colors.secondary;
+      }
+    } else {
+      modifier = colors.primary;
+    }
+
+    return <span className={`badge ${modifier}`}>{this.props.children}</span>;
   }
 }
 

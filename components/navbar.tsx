@@ -34,7 +34,7 @@ class DarkModeToggle extends Component<Properties, State> {
         <button
           className="navbar-toggle lg:flex"
           onClick={() => {
-            document.getElementById("body").classList.toggle("dark");
+            document.documentElement.classList.toggle("dark");
           }}
         >
           <label
@@ -103,9 +103,9 @@ class Navbar extends Component<Properties, State> {
       <header className="mb-8">
         <nav className="navbar">
           <div className="flex w-full items-center justify-between gap-4 lg:w-auto">
-            <button className="navbar-toggle px-4 py-2 text-xl lg:flex">
+            <span className="text-xl">
               <Link href={urlPatterns["home"]}>Youzarsiph</Link>
-            </button>
+            </span>
             <div className="flex items-center gap-2">
               <DarkModeToggle id="dark" />
               <button
