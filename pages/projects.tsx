@@ -1,5 +1,6 @@
 import Head from "next/head";
 import type { NextPage } from "next";
+import Card from "../components/card";
 import Navbar from "../components/navbar";
 import Container from "../components/container";
 
@@ -53,21 +54,18 @@ const Projects: NextPage = () => {
       <Navbar id="nav" />
       <Container>
         <main>
-          <div className="mb-8 rounded-xl border-2 border-yellow-500 p-8 tracking-tighter shadow-lg">
+          <Card>
             <h1 className="mb-8 text-5xl font-extrabold lg:text-9xl">
               Projects
             </h1>
             <p className="mb-8 text-2xl font-light">
               Here is some of my projects.
             </p>
-          </div>
+          </Card>
           <div className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
             {projects.map((project) => {
               return (
-                <div
-                  key={project.name}
-                  className="rounded-xl border-2 border-yellow-500 p-8 tracking-tighter shadow-lg"
-                >
+                <Card key={project.name}>
                   <h2 className="mb-8 text-3xl font-extrabold tracking-tighter sm:text-5xl">
                     {project.name}
                   </h2>
@@ -88,7 +86,7 @@ const Projects: NextPage = () => {
                       Demo
                     </a>
                   </div>
-                </div>
+                </Card>
               );
             })}
           </div>

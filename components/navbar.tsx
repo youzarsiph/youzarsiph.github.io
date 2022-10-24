@@ -103,7 +103,7 @@ class Navbar extends Component<Properties, State> {
       <header className="mb-8">
         <nav className="navbar">
           <div className="flex w-full items-center justify-between gap-4 lg:w-auto">
-            <span className="text-xl">
+            <span className="text-xl font-extrabold tracking-wide">
               <Link href={urlPatterns["home"]}>Youzarsiph</Link>
             </span>
             <div className="flex items-center gap-2">

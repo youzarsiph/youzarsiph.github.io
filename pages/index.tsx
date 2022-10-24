@@ -1,6 +1,7 @@
 import Head from "next/head";
 import urlPatterns from "../urls";
 import type { NextPage } from "next";
+import Card from "../components/card";
 import Badge from "../components/badge";
 import Navbar from "../components/navbar";
 import Container from "../components/container";
@@ -27,7 +28,7 @@ const Home: NextPage = () => {
       <Navbar id="nav" />
       <Container>
         <main>
-          <div className="mb-8 rounded-xl border-2 border-yellow-500 p-8 tracking-tighter shadow-lg">
+          <Card>
             <h1 className="mb-8 text-5xl font-extrabold lg:text-9xl">
               Youzarsiph
             </h1>
@@ -79,7 +80,7 @@ const Home: NextPage = () => {
                 LinkedIn
               </a>
             </div>
-          </div>
+          </Card>
           <h1 className="mb-8 text-5xl font-extrabold lg:text-7xl">
             My Skills
           </h1>
