@@ -1,7 +1,7 @@
 import Head from "next/head";
 import type { NextPage } from "next";
 import Card from "../components/card";
-import Navbar from "../components/navbar";
+import Nav from "../components/navbar";
 import Container from "../components/container";
 
 const Projects: NextPage = () => {
@@ -51,7 +51,7 @@ const Projects: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar id="nav" />
+      <Nav />
       <Container>
         <main>
           <Card>

@@ -3,7 +3,7 @@ import urlPatterns from "../urls";
 import type { NextPage } from "next";
 import Card from "../components/card";
 import Badge from "../components/badge";
-import Navbar from "../components/navbar";
+import Nav from "../components/navbar";
 import Container from "../components/container";
 
 const Home: NextPage = () => {
@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar id="nav" />
+      <Nav />
       <Container>
         <main>
           <Card>

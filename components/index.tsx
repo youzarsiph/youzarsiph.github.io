@@ -4,6 +4,7 @@ interface Properties {
   id?: string;
   children?: ReactNode | ReactNode[];
   color?: string;
+  className?: string;
 }
 
 export interface State {
