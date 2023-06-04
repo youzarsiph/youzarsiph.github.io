@@ -1,27 +1,17 @@
-import Properties from ".";
-import { Component, ReactNode } from "react";
+/**
+ * Badges
+ */
 
-class Badge extends Component<Properties> {
-  render(): ReactNode {
-    let colors = {
-      primary: "badge-primary",
-      secondary: "badge-secondary",
-    };
+import React from "react";
 
-    let modifier: string;
-
-    if (typeof this.props.color === "string") {
-      if (this.props.color === "primary") {
-        modifier = colors.primary;
-      } else {
-        modifier = colors.secondary;
-      }
-    } else {
-      modifier = colors.primary;
-    }
-
-    return <span className={`badge ${modifier}`}>{this.props.children}</span>;
-  }
-}
+const Badge = (props: { color: string; children: React.ReactNode }) => (
+  <span
+    className={`badge ${
+      props.color === "primary" ? "badge-primary" : "badge-secondary"
+    }`}
+  >
+    {props.children}
+  </span>
+);
 
 export default Badge;

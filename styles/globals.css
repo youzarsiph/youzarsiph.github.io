@@ -46,11 +46,11 @@
   }
 
   .navbar-toggle {
-    @apply rounded border-2 border-transparent text-xl font-medium tracking-wide outline-none hover:bg-white focus:border-yellow-500 focus:bg-white focus:ring focus:ring-white active:scale-95 dark:hover:bg-stone-800 dark:focus:border-stone-900 dark:focus:bg-stone-700 dark:focus:ring-stone-700 lg:hidden;
+    @apply rounded border-2 border-transparent px-4 py-2 text-xl font-medium tracking-wide outline-none hover:bg-white focus:border-yellow-500 focus:bg-white focus:ring focus:ring-white active:scale-95 dark:hover:bg-stone-800 dark:focus:border-stone-900 dark:focus:bg-stone-700 dark:focus:ring-stone-700 lg:hidden;
   }
 
   .navbar-menu {
-    @apply mt-4 hidden flex-col items-start gap-4 rounded-xl border-2 border-yellow-500 bg-white p-4 peer-checked:flex dark:border-stone-800 dark:bg-inherit lg:mt-0 lg:flex lg:flex-row lg:items-center lg:border-none lg:bg-inherit lg:p-0;
+    @apply mt-4 hidden flex-col items-start gap-4 rounded-xl border-2 border-yellow-500 bg-white p-4 dark:border-stone-800 dark:bg-inherit lg:mt-0 lg:flex lg:flex-row lg:items-center lg:border-none lg:bg-inherit lg:p-0;
   }
 
   .navbar-item {

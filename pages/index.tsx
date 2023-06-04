@@ -1,10 +1,11 @@
+/**
+ * Home page
+ */
+
 import Head from "next/head";
-import urlPatterns from "../urls";
 import type { NextPage } from "next";
-import Card from "../components/card";
-import Badge from "../components/badge";
-import Nav from "../components/navbar";
-import Container from "../components/container";
+import urlPatterns from "../urls";
+import { Badge, Card, Container, Nav } from "../components";
 
 const Home: NextPage = () => {
   const skills = [
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
     "React",
     "NextJS",
   ];
+
   return (
     <div>
       <Head>

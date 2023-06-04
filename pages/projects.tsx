@@ -1,11 +1,13 @@
+/**
+ * Projects
+ */
+
 import Head from "next/head";
 import type { NextPage } from "next";
-import Card from "../components/card";
-import Nav from "../components/navbar";
-import Container from "../components/container";
+import { Card, Container, Nav } from "../components";
 
 const Projects: NextPage = () => {
-  let projects = [
+  const projects = [
     {
       name: "Evolution UI",
       demo: "https://youzarsiph.github.io/next-evolution/",

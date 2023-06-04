@@ -1,10 +1,11 @@
-import Properties from ".";
-import { Component, ReactNode } from "react";
+/**
+ * Cards
+ */
 
-class Card extends Component<Properties> {
-  render(): ReactNode {
-    return <div className="card">{this.props.children}</div>;
-  }
-}
+import React from "react";
+
+const Card = (props: { children: React.ReactNode }) => (
+  <div className="card">{props.children}</div>
+);
 
 export default Card;

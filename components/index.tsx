@@ -1,14 +1,10 @@
-import { ReactNode } from "react";
+/**
+ * Components
+ */
 
-interface Properties {
-  id?: string;
-  children?: ReactNode | ReactNode[];
-  color?: string;
-  className?: string;
-}
+import Badge from "./badge";
+import Card from "./card";
+import Container from "./container";
+import Nav from "./navbar";
 
-export interface State {
-  checked?: boolean;
-}
-
-export default Properties;
+export { Badge, Card, Container, Nav };
