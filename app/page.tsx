@@ -1,12 +1,28 @@
-/**
- * Projects
- */
+"use client";
 
-import Head from "next/head";
-import type { NextPage } from "next";
-import { Card, Container, Nav } from "../components";
+import React from "react";
+import { CodeBracketIcon, UserCircleIcon } from "@heroicons/react/24/outline";
+import { Badge, Card, Container, Nav } from "@/components";
 
-const Projects: NextPage = () => {
+const Home = () => {
+  const skills = [
+    "Python",
+    "Kotlin",
+    "Django",
+    "Django REST Framework",
+    "APIs",
+    "SQL",
+    "HTML5",
+    "CSS3",
+    "Bootstrap",
+    "TailwindCSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "React Native",
+    "NextJS",
+  ];
+
   const projects = [
     {
       name: "Snippets",
@@ -49,25 +65,62 @@ const Projects: NextPage = () => {
 
   return (
     <div>
-      <Head>
-        <title>Youzarsiph | Projects </title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Nav />
 
       <Container>
-        <main>
+        <main className="grid gap-12">
           <Card>
-            <h1 className="mb-8 text-5xl font-extrabold lg:text-9xl">
-              Projects
+            <h1 id="home" className="mb-16 text-5xl font-extrabold lg:text-9xl">
+              Youzarsiph
             </h1>
-            <p className="mb-8 text-2xl font-light">
-              Here is some of my projects.
+
+            <p className="mb-16 text-2xl font-light">
+              Hello, my name is Yousef Abu Shanab, I am a software engineer, I
+              love to learn and build.
             </p>
+
+            <div className="grid flex-col items-center gap-4 lg:flex lg:flex-row">
+              <a
+                role={"button"}
+                href={"https://github.com/youzarsiph/"}
+                className="btn btn-primary flex items-center gap-4"
+              >
+                <CodeBracketIcon className="h-6 w-6" />
+                Github
+              </a>
+              <a
+                role={"button"}
+                href={"https://linkedin.com/in/youzarsiph/"}
+                className="btn btn-secondary flex items-center gap-4"
+              >
+                <UserCircleIcon className="h-6 w-6" />
+                LinkedIn
+              </a>
+            </div>
           </Card>
 
-          <div className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
+          <Card>
+            <h1 className="mb-16 text-5xl font-extrabold lg:text-7xl">
+              My Skills
+            </h1>
+            <div className="flex flex-wrap items-center gap-4">
+              {skills.map((skill) => (
+                <Badge key={skill}>{skill}</Badge>
+              ))}
+            </div>
+          </Card>
+
+          <Card>
+            <h1
+              id="projects"
+              className="mb-16 text-5xl font-extrabold lg:text-9xl"
+            >
+              Projects
+            </h1>
+            <p className="text-2xl font-light">Here is some of my projects.</p>
+          </Card>
+
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
             {projects.map((project) => (
               <Card key={project.name}>
                 <h2 className="mb-8 text-3xl font-extrabold tracking-tighter sm:text-5xl">
@@ -101,4 +154,4 @@ const Projects: NextPage = () => {
   );
 };
 
-export default Projects;
+export default Home;
