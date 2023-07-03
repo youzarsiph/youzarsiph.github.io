@@ -2,7 +2,10 @@
 
 import React from "react";
 import { CodeBracketIcon, UserCircleIcon } from "@heroicons/react/24/outline";
-import { Badge, Card, Container, Nav } from "@/components";
+import Badge from "@/components/badge";
+import Card from "@/components/card";
+import Container from "@/components/container";
+import Nav from "@/components/navbar";
 
 const Home = () => {
   const skills = [
