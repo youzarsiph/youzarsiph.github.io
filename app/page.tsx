@@ -2,10 +2,10 @@
 
 import React from "react";
 import { CodeBracketIcon, UserCircleIcon } from "@heroicons/react/24/outline";
-import Badge from "@/components/badge";
-import Card from "@/components/card";
-import Container from "@/components/container";
-import Nav from "@/components/navbar";
+import Badge from "@/components/Badge";
+import Card from "@/components/Card";
+import Container from "@/components/Container";
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   const skills = [
@@ -68,7 +68,7 @@ const Home = () => {
 
   return (
     <div>
-      <Nav />
+      <Navbar />
 
       <Container>
         <main className="grid gap-12">

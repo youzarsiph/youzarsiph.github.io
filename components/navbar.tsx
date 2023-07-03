@@ -9,7 +9,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 
-const Navbar = (props: { children: React.ReactNode }) => {
+const Nav = (props: { children: React.ReactNode }) => {
   const [open, setOpen] = React.useState<boolean>(false);
 
   return (
@@ -44,29 +44,29 @@ const Navbar = (props: { children: React.ReactNode }) => {
   );
 };
 
-const NavbarItem = (props: { children: React.ReactNode }) => (
+const NavItem = (props: { children: React.ReactNode }) => (
   <li className={`navbar-item`}>{props.children}</li>
 );
 
-const Nav = () => (
-  <Navbar>
-    <NavbarItem>
+const Navbar = () => (
+  <Nav>
+    <NavItem>
       <HomeIcon className="h-6 w-6" />
       <Link href={"#home"}>Home</Link>
-    </NavbarItem>
-    <NavbarItem>
+    </NavItem>
+    <NavItem>
       <RectangleGroupIcon className="h-6 w-6" />
       <Link href={"#projects"}>Projects</Link>
-    </NavbarItem>
-    <NavbarItem>
+    </NavItem>
+    <NavItem>
       <CodeBracketIcon className="h-6 w-6" />
       <a href={"https://github.com/youzarsiph/"}>Github</a>
-    </NavbarItem>
-    <NavbarItem>
+    </NavItem>
+    <NavItem>
       <UserCircleIcon className="h-6 w-6" />
       <a href={"https://linkedin.com/in/youzarsiph/"}>LinkedIn</a>
-    </NavbarItem>
-  </Navbar>
+    </NavItem>
+  </Nav>
 );
 
-export default Nav;
+export default Navbar;
