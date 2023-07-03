@@ -9,6 +9,13 @@ import { Card, Container, Nav } from "../components";
 const Projects: NextPage = () => {
   const projects = [
     {
+      name: "Snippets",
+      demo: undefined,
+      github: "https://github.com/youzarsiph/snippets/",
+      description:
+        "A social media platform for creating and sharing beautiful images of code snippets",
+    },
+    {
       name: "Evolution UI",
       demo: "https://youzarsiph.github.io/next-evolution/",
       github: "https://github.com/youzarsiph/next-evolution/",
@@ -28,21 +35,15 @@ const Projects: NextPage = () => {
     },
     {
       name: "Core LMS",
-      demo: "https://youzarsiph.github.io/core_lms/",
+      demo: undefined,
       github: "https://github.com/youzarsiph/core_lms/",
       description: "A learning management system written in python",
     },
     {
-      name: "JApp",
-      demo: "https://youzarsiph.github.io/JApp/",
-      github: "https://github.com/youzarsiph/JApp/",
-      description: "How I write Django apps",
-    },
-    {
       name: "Blog",
-      demo: "https://youzarsiph.github.io/blog/",
+      demo: undefined,
       github: "https://github.com/youzarsiph/blog/",
-      description: "A reusable blogging app written in python",
+      description: "A Django blog app written in python",
     },
   ];
 
@@ -54,6 +55,7 @@ const Projects: NextPage = () => {
       </Head>
 
       <Nav />
+
       <Container>
         <main>
           <Card>
@@ -64,33 +66,34 @@ const Projects: NextPage = () => {
               Here is some of my projects.
             </p>
           </Card>
+
           <div className="mb-8 grid grid-cols-1 gap-4 lg:grid-cols-2">
-            {projects.map((project) => {
-              return (
-                <Card key={project.name}>
-                  <h2 className="mb-8 text-3xl font-extrabold tracking-tighter sm:text-5xl">
-                    {project.name}
-                  </h2>
-                  <p className="mb-8 text-xl">{project.description}</p>
-                  <div className="grid items-center gap-4 lg:flex">
-                    <a
-                      role={"button"}
-                      href={project.github}
-                      className="btn btn-primary"
-                    >
-                      Github
-                    </a>
+            {projects.map((project) => (
+              <Card key={project.name}>
+                <h2 className="mb-8 text-3xl font-extrabold tracking-tighter sm:text-5xl">
+                  {project.name}
+                </h2>
+                <p className="mb-8 text-xl">{project.description}</p>
+                <div className="grid items-center gap-4 lg:flex">
+                  <a
+                    role={"button"}
+                    href={project.github}
+                    className="btn btn-primary w-full"
+                  >
+                    Github
+                  </a>
+                  {project.demo !== undefined ? (
                     <a
                       role={"button"}
                       href={project.demo}
-                      className="btn btn-secondary"
+                      className="btn btn-secondary w-full"
                     >
                       Demo
                     </a>
-                  </div>
-                </Card>
-              );
-            })}
+                  ) : undefined}
+                </div>
+              </Card>
+            ))}
           </div>
         </main>
       </Container>

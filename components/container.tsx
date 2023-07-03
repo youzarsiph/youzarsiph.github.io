@@ -5,7 +5,7 @@
 import React from "react";
 
 const Container = (props: { children: React.ReactNode }) => (
-  <section className="relative mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-56 2xl:mx-96">
+  <section className="relative mx-2 sm:mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-64">
     {props.children}
   </section>
 );

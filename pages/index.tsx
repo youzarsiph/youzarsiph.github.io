@@ -10,13 +10,19 @@ import { Badge, Card, Container, Nav } from "../components";
 const Home: NextPage = () => {
   const skills = [
     "Python",
+    "Kotlin",
     "Django",
+    "Django REST Framework",
+    "APIs",
     "SQL",
     "HTML5",
     "CSS3",
+    "Bootstrap",
+    "TailwindCSS",
     "JavaScript",
     "TypeScript",
     "React",
+    "React Native",
     "NextJS",
   ];
 
@@ -83,20 +89,14 @@ const Home: NextPage = () => {
               </a>
             </div>
           </Card>
+
           <h1 className="mb-8 text-5xl font-extrabold lg:text-7xl">
             My Skills
           </h1>
           <div className="mb-8 flex flex-wrap items-center gap-4">
-            {skills.map((skill) => {
-              return (
-                <Badge
-                  key={skill}
-                  color={Math.random() > 0.5 ? "primary" : "secondary"}
-                >
-                  {skill}
-                </Badge>
-              );
-            })}
+            {skills.map((skill) => (
+              <Badge key={skill}>{skill}</Badge>
+            ))}
           </div>
         </main>
       </Container>

@@ -6,65 +6,17 @@ import React from "react";
 import Link from "next/link";
 import urlPatterns from "../urls";
 
-const Toggle = () => {
-  const [darkMode, setDarkMode] = React.useState<boolean>(false);
-
-  return (
-    <button
-      type="button"
-      className="navbar-toggle lg:flex"
-      onClick={() => {
-        setDarkMode(!darkMode);
-        document.documentElement.classList.toggle("dark");
-      }}
-    >
-      {darkMode ? (
-        <svg
-          className="h-6 w-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-          ></path>
-        </svg>
-      ) : (
-        <svg
-          className="h-6 w-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-          ></path>
-        </svg>
-      )}
-    </button>
-  );
-};
-
 const Navbar = (props: { children: React.ReactNode }) => {
   const [open, setOpen] = React.useState<boolean>(false);
 
   return (
     <header className="mb-8">
       <nav className="navbar">
-        <div className="flex w-full items-center justify-between gap-4 lg:w-auto">
-          <span className="navbar-toggle px-4 py-2 lg:flex">
+        <div className="flex w-full items-center justify-between gap-4 px-4 lg:w-auto">
+          <span className="font-mono text-2xl font-semibold lg:flex">
             <Link href={urlPatterns["home"]}>Youzarsiph</Link>
           </span>
           <div className="flex items-center gap-2">
-            <Toggle />
             <button
               type="button"
               aria-label="Menu"

@@ -2,9 +2,10 @@
  * Components
  */
 
-import Badge from "./badge";
-import Card from "./card";
-import Container from "./container";
-import Nav from "./navbar";
+import Background from "./Background";
+import Badge from "./Badge";
+import Card from "./Card";
+import Container from "./Container";
+import Nav from "./Navbar";
 
-export { Badge, Card, Container, Nav };
+export { Background, Badge, Card, Container, Nav };
