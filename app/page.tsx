@@ -1,11 +1,75 @@
 "use client";
 
 import React from "react";
-import { CodeBracketIcon, UserCircleIcon } from "@heroicons/react/24/outline";
-import Badge from "../components/Badge";
-import Card from "../components/Card";
-import Container from "../components/Container";
-import Navbar from "../components/Navbar";
+import Link from "next/link";
+import {
+  Bars2Icon,
+  CodeBracketIcon,
+  HomeIcon,
+  RectangleGroupIcon,
+  UserCircleIcon,
+  XMarkIcon,
+} from "@heroicons/react/24/outline";
+
+const Nav = (props: { children: React.ReactNode }) => {
+  const [open, setOpen] = React.useState<boolean>(false);
+
+  return (
+    <header className="mb-8">
+      <nav className="navbar">
+        <div className="flex w-full items-center justify-between gap-4 px-4 lg:w-auto">
+          <span className="font-mono text-2xl font-semibold lg:flex">
+            <Link href={"#home"}>Youzarsiph</Link>
+          </span>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              aria-label="Menu"
+              onClick={() => setOpen(!open)}
+              className="navbar-toggle"
+            >
+              {open ? (
+                <XMarkIcon className="h-6 w-6" />
+              ) : (
+                <Bars2Icon className="h-6 w-6" />
+              )}
+            </button>
+          </div>
+        </div>
+        <div className="w-full lg:w-auto">
+          <ul className={`navbar-menu${open ? " flex" : ""}`}>
+            {props.children}
+          </ul>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+const NavItem = (props: { children: React.ReactNode }) => (
+  <li className={`navbar-item`}>{props.children}</li>
+);
+
+const Navbar = () => (
+  <Nav>
+    <NavItem>
+      <HomeIcon className="h-6 w-6" />
+      <Link href={"#home"}>Home</Link>
+    </NavItem>
+    <NavItem>
+      <RectangleGroupIcon className="h-6 w-6" />
+      <Link href={"#projects"}>Projects</Link>
+    </NavItem>
+    <NavItem>
+      <CodeBracketIcon className="h-6 w-6" />
+      <a href={"https://github.com/youzarsiph/"}>Github</a>
+    </NavItem>
+    <NavItem>
+      <UserCircleIcon className="h-6 w-6" />
+      <a href={"https://linkedin.com/in/youzarsiph/"}>LinkedIn</a>
+    </NavItem>
+  </Nav>
+);
 
 const Home = () => {
   const skills = [
@@ -70,9 +134,9 @@ const Home = () => {
     <div>
       <Navbar />
 
-      <Container>
+      <section className="relative mx-2 sm:mx-4 md:mx-8 lg:mx-16 xl:mx-32 2xl:mx-64">
         <main className="grid gap-12">
-          <Card>
+          <div className="card">
             <h1 id="home" className="mb-16 text-5xl font-extrabold lg:text-9xl">
               Youzarsiph
             </h1>
@@ -100,20 +164,22 @@ const Home = () => {
                 LinkedIn
               </a>
             </div>
-          </Card>
+          </div>
 
-          <Card>
+          <div className="card">
             <h1 className="mb-16 text-5xl font-extrabold lg:text-7xl">
               My Skills
             </h1>
             <div className="flex flex-wrap items-center gap-4">
               {skills.map((skill) => (
-                <Badge key={skill}>{skill}</Badge>
+                <span key={skill} className="badge">
+                  {skill}
+                </span>
               ))}
             </div>
-          </Card>
+          </div>
 
-          <Card>
+          <div className="card">
             <h1
               id="projects"
               className="mb-16 text-5xl font-extrabold lg:text-9xl"
@@ -121,11 +187,11 @@ const Home = () => {
               Projects
             </h1>
             <p className="text-2xl font-light">Here is some of my projects.</p>
-          </Card>
+          </div>
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
             {projects.map((project) => (
-              <Card key={project.name}>
+              <div key={project.name} className="card">
                 <h2 className="mb-8 text-3xl font-extrabold tracking-tighter sm:text-5xl">
                   {project.name}
                 </h2>
@@ -148,11 +214,11 @@ const Home = () => {
                     </a>
                   ) : undefined}
                 </div>
-              </Card>
+              </div>
             ))}
           </div>
         </main>
-      </Container>
+      </section>
     </div>
   );
 };
