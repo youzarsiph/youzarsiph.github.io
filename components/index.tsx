@@ -1,7 +1,3 @@
-/**
- * Components
- */
-
 import Background from "./Background";
 import Badge from "./Badge";
 import Card from "./Card";

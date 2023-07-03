@@ -1,7 +1,3 @@
-/**
- * Container
- */
-
 import React from "react";
 
 const Container = (props: { children: React.ReactNode }) => (

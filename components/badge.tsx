@@ -1,7 +1,3 @@
-/**
- * Badges
- */
-
 import React from "react";
 
 const Badge = (props: { children: React.ReactNode }) => (
