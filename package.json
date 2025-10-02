@@ -9,7 +9,9 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "daisyui": "^5.0.54",
+    "@vercel/og": "^0.8.5",
+    "daisyui": "^5.1.14",
+    "lucide-react": "^0.513.0",
     "next": "15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -25,7 +27,7 @@
     "eslint-config-next": "15.5.2",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14",
-    "tailwindcss": "^4",
+    "tailwindcss": "^4.1.13",
     "typescript": "^5"
   }
 }
