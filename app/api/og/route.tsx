@@ -14,6 +14,7 @@ export async function GET() {
           backgroundColor: 'white',
         }}
       >
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           alt="Logo"
           height={1080}
