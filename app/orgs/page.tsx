@@ -98,7 +98,7 @@ const Orgs = () => (
             <Image
               height={1080}
               width={1920}
-              alt="Q Complex Logo"
+              alt="House Of Wisdom Logo"
               src="/how-logo.png"
               className="rounded-box w-full"
             />
@@ -183,7 +183,7 @@ const Orgs = () => (
             <Image
               height={1080}
               width={1920}
-              alt="Q Complex Logo"
+              alt="Al Arabiyya Logo"
               src="/al-arabiyya-logo.png"
               className="rounded-box w-full"
             />
@@ -211,13 +211,13 @@ const Orgs = () => (
               <li>
                 <a
                   className="link link-primary"
-                  href="https://github.com/al-arabiyya/al-qawaed"
+                  href="https://github.com/al-arabiyya/al-uloum"
                 >
                   <strong>
-                    <code>al-qawaed</code>
+                    <code>al-uloum</code>
                   </strong>
                 </a>
-                : Arabic grammar web app.
+                : Arabic linguistics web app.
               </li>
               <li>
                 <a
@@ -248,6 +248,17 @@ const Orgs = () => (
                 >
                   <strong>
                     <code>al-arabiyya</code>
+                  </strong>
+                </a>
+                : The main platform that contains all other projects.
+              </li>
+              <li>
+                <a
+                  className="link link-primary"
+                  href="https://github.com/al-arabiyya/al-arabiyya-app"
+                >
+                  <strong>
+                    <code>al-arabiyya-app</code>
                   </strong>
                 </a>
                 : Cross-platform mobile app for Arabic language learning.

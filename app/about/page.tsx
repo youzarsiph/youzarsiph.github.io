@@ -30,8 +30,8 @@ const About = () => (
             optional; it`s a responsibility.
           </li>
           <li>
-            <strong>Arabic at the center:</strong> Production readiness isn`t
-            optional; it`s a responsibility.
+            <strong>Arabic at the center:</strong> Technology should honor and
+            elevate our language.
           </li>
           <li>
             <strong>Open impact:</strong> Share what works. Document what
