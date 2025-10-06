@@ -142,7 +142,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                             data-tip="Badges"
                           >
                             <a
-                              href="https://www.coursera.org/learner/youzarsiph"
+                              href="https://www.credly.com/users/youzarsiph"
                               className="btn rounded-field btn-square btn-sm btn-error md:btn-md 2xl:btn-lg"
                             >
                               <BadgeCheck className="size-4 md:size-6" />
@@ -244,7 +244,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                     data-tip="Badges"
                   >
                     <a
-                      href="https://www.coursera.org/learner/youzarsiph"
+                      href="https://www.credly.com/users/youzarsiph"
                       className="btn rounded-field btn-square btn-sm btn-error md:btn-md 2xl:btn-lg"
                     >
                       <BadgeCheck className="size-4 md:size-6" />
