@@ -41,3 +41,9 @@
   --depth: 1;
   --noise: 0;
 }
+
+@layer base {
+  .container-prose {
+    @apply prose prose-sm prose-video:rounded-box xl:prose-lg 2xl:prose-xl prose-headings:text-primary prose-img:rounded-box prose-img:w-full prose-p:text-primary prose-p:opacity-90 prose-li:text-primary prose-li:opacity-90 prose-a:link prose-a:link-hover prose-a:link-info prose-a:font-semibold mx-auto w-full;
+  }
+}

@@ -1,4 +1,4 @@
-import { Prose } from '@/app/ui'
+import { Prose } from '@/app/lib/ui'
 
 const Contact = () => (
   <div className="container mx-auto grid gap-8 px-4">

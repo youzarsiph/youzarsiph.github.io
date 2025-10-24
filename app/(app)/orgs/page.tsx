@@ -1,4 +1,4 @@
-import { Prose } from '@/app/ui'
+import { Prose } from '@/app/lib/ui'
 import Image from 'next/image'
 
 const Orgs = () => (

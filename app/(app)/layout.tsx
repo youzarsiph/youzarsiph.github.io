@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Noto_Kufi_Arabic } from 'next/font/google'
-import './ui/globals.css'
+import '@/app/lib/ui/globals.css'
 import {
   Home,
   Menu,
@@ -22,7 +22,7 @@ import {
   BadgeCheck,
 } from 'lucide-react'
 import Link from 'next/link'
-import { Logo } from '@/app/ui'
+import { Logo } from '@/app/lib/ui'
 
 const kufi = Noto_Kufi_Arabic({
   variable: '--font-kufi',

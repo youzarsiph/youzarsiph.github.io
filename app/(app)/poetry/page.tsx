@@ -1,4 +1,4 @@
-import { Prose } from '@/app/ui'
+import { Prose } from '@/app/lib/ui'
 import { AudioLines } from 'lucide-react'
 
 const Poetry = () => (
@@ -91,7 +91,7 @@ const Poetry = () => (
               data-tip="Listen"
             >
               <a
-                href="https://suno.com/s/ghp6mml7YR2VaTu1"
+                href="https://suno.com/s/Pw8HCHoeZUFymfHS"
                 className="btn rounded-field btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
               >
                 <AudioLines className="size-4 md:size-6" />
@@ -124,7 +124,7 @@ const Poetry = () => (
               data-tip="Listen"
             >
               <a
-                href="https://suno.com/s/HQ56MMjwcnoLUcEB"
+                href="https://suno.com/s/BtXY8joqZnukXzR7"
                 className="btn rounded-field btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
               >
                 <AudioLines className="size-4 md:size-6" />
