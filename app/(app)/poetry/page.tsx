@@ -8,9 +8,9 @@ const PoemCard = (props: { src: string; href: string }) => (
     <figure className="relative size-full py-20">
       <a
         href={props.href}
-        className="absolute inset-0 z-10 hidden items-center justify-center group-hover:flex"
+        className="absolute inset-0 z-10 flex items-center justify-center"
       >
-        <PlayCircle className="text-primary rounded-box size-1/4 p-4 backdrop-blur-3xl" />
+        <PlayCircle className="text-primary rounded-box hidden size-1/4 p-4 backdrop-blur-3xl group-hover:block" />
       </a>
 
       <Image

@@ -137,7 +137,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                         </p>
                       </aside>
                       <nav className="grid gap-4">
-                        <ol className="grid grid-flow-col gap-4">
+                        <ol className="flex flex-wrap items-center gap-4">
                           <li
                             className="tooltip tooltip-right tooltip-accent rtl:tooltip-left"
                             data-tip="Badges"
