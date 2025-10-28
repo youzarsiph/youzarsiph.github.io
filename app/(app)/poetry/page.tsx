@@ -1,5 +1,38 @@
+import { CheckCircle2, ChevronRight, Info, PlayCircle } from 'lucide-react'
+import Image from 'next/image'
+
 import { Prose } from '@/app/lib/ui'
-import { AudioLines } from 'lucide-react'
+
+const PoemCard = (props: { src: string; href: string }) => (
+  <article className="not-prose card card-sm md:card-md lg:card-lg 2xl:card-xl group overflow-hidden">
+    <figure className="relative size-full py-20">
+      <a
+        href={props.href}
+        className="absolute inset-0 z-10 hidden items-center justify-center group-hover:flex"
+      >
+        <PlayCircle className="text-primary rounded-box size-1/4 p-4 backdrop-blur-3xl" />
+      </a>
+
+      <Image
+        src={props.src}
+        alt="Background"
+        height={1000}
+        width={1000}
+        className="absolute inset-0 mx-auto h-full blur-2xl"
+      />
+
+      <div className="z-1 flex size-1/2 items-center justify-center">
+        <Image
+          src={props.src}
+          alt="Clip image"
+          height={1000}
+          width={1000}
+          className="rounded-box"
+        />
+      </div>
+    </figure>
+  </article>
+)
 
 const Poetry = () => (
   <div className="container mx-auto grid gap-8 px-4">
@@ -54,24 +87,41 @@ const Poetry = () => (
 
       <div>
         <h2>Selected lines</h2>
+
+        <div
+          role="alert"
+          className="not-prose alert alert-success alert-soft mb-8"
+        >
+          <CheckCircle2 className="size-4 lg:size-6" />
+          <p>Click the images to listen</p>
+        </div>
+
+        <PoemCard
+          src="/under-the-skies.jpeg"
+          href="https://suno.com/s/3Stz7QLsIjXr9Abp"
+        />
         <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
-          <span>أَيُّهَا المَجْنُوٓنُ، اِرْمِ السِّهَامَ لَيْلَآ</span>
-          <span>حُبُّهَا المَكْنُوٓنُ، أَمِيلُ إِلَيْهَا مَيْلَآ</span>
+          <span>فِي ظَلَامِ اللَّيلِ وَ ضَوْءِ النُّجُوٓمْ</span>
+          <span>عَلَى أَعْتَابِ بَابِهِ بَيْنَ يَدَيْهِ أَقُوٓمْ</span>
 
-          <span>إِنَّ ذَا الجُنُوٓنُ، إِنَّهَا عِنْدِي لَيْلَىٓ</span>
-          <span>كَافٌ ثُمَّ نُوٓنٌ، تَنَالُ الحُـبَّ نَيْلَآ</span>
+          <span>
+            لَا مَلْجَأَ إِلَّآ إِلَيْٓهِ ولَا الغَيْٓبُ بِمَعْلُوٓمْ
+          </span>
+          <span>إِلَّآ أَنِّي جِئْتُهُ بِهَمِّ قَلْبِيَ المَكْلُوٓمْ</span>
 
-          <span>أَيُّهَا اللَآئِمُ، لَقَدْ أَكْثَرْتَ لَوْمًا وَعَذْلَآ</span>
-          <span>غَافِلٌ وَنَآئِمٌ، وَمَا كَانَ حُكْمُكَ عَدْلَآ</span>
+          <span>قَبْلَ الفَجْرِ وَ حِينَ تُمْطِرُ الغُيُوٓمْ</span>
+          <span>قَلْبِي يُنَادِيهِ أَنْ يَا حَيُّ يَا قَيُّوٓمْ</span>
 
-          <span>إِنِّي الهَآئِمُ، لَقَدْ هِمْتُ بِهَا حُبًّا وَذُلَّآ</span>
-          <span>سَأَلْتُ الدَّآئِمَ، قَلْبَهَا، حُبَّهَا ثُمَّ وَصْلَآ</span>
-
-          <cite className="text-primary col-span-2 font-bold">
-            يوسف أبو شنب
-          </cite>
+          <span>كُلٌّ بِأَمْرِكَ مَأْمُورٌ بِحُكْمِكَ مَحْكُوٓمْ</span>
+          <span>إِنِّي لَفِي هُمُوٓمْ، تَسْكُنُنِي الغُمُوٓمْ</span>
         </blockquote>
 
+        <hr />
+
+        <PoemCard
+          src="/skoon.jpeg"
+          href="https://suno.com/s/Pw8HCHoeZUFymfHS"
+        />
         <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
           <span>بَعْدَ أَنْ كَانَ قَلْبِي فِي هُدُوءٍ وَ سُكُونْ</span>
           <span>حَتّى رَأَيْتُكِ فَقُلْتُ مُحَالٌ كَيْفَ يَكُونْ</span>
@@ -84,27 +134,14 @@ const Poetry = () => (
 
           <span>يَا مَنْ إِذَا أَرَادَ يَكُونْ، تَحْفَظُنَا وَ تَصُونْ</span>
           <span>أَنْزِلْ الشِّفَاءَ، إِنَّ الدَّاءَ فِي قَلْبِي مَكْنُونْ</span>
-
-          <div className="flex items-center gap-4">
-            <div
-              className="tooltip tooltip-right tooltip-primary rtl:tooltip-left"
-              data-tip="Listen"
-            >
-              <a
-                href="https://suno.com/s/Pw8HCHoeZUFymfHS"
-                className="btn rounded-field btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
-              >
-                <AudioLines className="size-4 md:size-6" />
-                <span className="sr-only">Listen</span>
-              </a>
-            </div>
-
-            <cite className="text-primary col-span-2 font-bold">
-              يوسف أبو شنب
-            </cite>
-          </div>
         </blockquote>
 
+        <hr />
+
+        <PoemCard
+          src="/flame.jpeg"
+          href="https://suno.com/s/Pw8HCHoeZUFymfHS"
+        />
         <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
           <span>حُبُّكِ نَارٌ وَلَيْتَنِي لَمْ أَكُنِ الوَقُود</span>
           <span>كَأَنِّي مُقَيَّدٌ فِي الأَغْلَالِ وَالقُيُود</span>
@@ -117,26 +154,23 @@ const Poetry = () => (
 
           <span>كُلَّمَا رَأَيْتُكِ حُبِّي لَكِ ازْدَاد</span>
           <span>فَزَادَ مَا يُكِنُّ قَلْبِي مِنْ وِدَاد</span>
-
-          <div className="flex items-center gap-4">
-            <div
-              className="tooltip tooltip-right tooltip-primary rtl:tooltip-left"
-              data-tip="Listen"
-            >
-              <a
-                href="https://suno.com/s/s8cm8P1D554qVZjf"
-                className="btn rounded-field btn-square btn-soft btn-sm btn-primary md:btn-md 2xl:btn-lg"
-              >
-                <AudioLines className="size-4 md:size-6" />
-                <span className="sr-only">Listen</span>
-              </a>
-            </div>
-
-            <cite className="text-primary col-span-2 font-bold">
-              يوسف أبو شنب
-            </cite>
-          </div>
         </blockquote>
+
+        <div
+          role="alert"
+          className="not-prose alert alert-info alert-soft mb-8"
+        >
+          <Info className="size-4 lg:size-6" />
+          <p>For more check out my profile on Suno</p>
+
+          <a
+            href="https://suno.com/@youzarsiph"
+            className="btn btn-sm btn-info rounded-field"
+          >
+            Learn more
+            <ChevronRight className="size-4 rtl:rotate-180" />
+          </a>
+        </div>
       </div>
 
       <div>

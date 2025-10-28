@@ -20,6 +20,7 @@ import {
   BrainCircuit,
   GraduationCap,
   BadgeCheck,
+  Music4,
 } from 'lucide-react'
 import Link from 'next/link'
 import { Logo } from '@/app/lib/ui'
@@ -138,12 +139,12 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                       <nav className="grid gap-4">
                         <ol className="grid grid-flow-col gap-4">
                           <li
-                            className="tooltip tooltip-right tooltip-error rtl:tooltip-left"
+                            className="tooltip tooltip-right tooltip-accent rtl:tooltip-left"
                             data-tip="Badges"
                           >
                             <a
                               href="https://www.credly.com/users/youzarsiph"
-                              className="btn rounded-field btn-square btn-sm btn-error md:btn-md 2xl:btn-lg"
+                              className="btn rounded-field btn-square btn-sm btn-accent md:btn-md 2xl:btn-lg"
                             >
                               <BadgeCheck className="size-4 md:size-6" />
                               <span className="sr-only">Badges</span>
@@ -210,6 +211,19 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                               <span className="sr-only">Github</span>
                             </a>
                           </li>
+
+                          <li
+                            className="tooltip tooltip-right tooltip-error rtl:tooltip-left"
+                            data-tip="Suno"
+                          >
+                            <a
+                              href="https://suno.com/@youzarsiph"
+                              className="btn rounded-field btn-square btn-sm btn-error md:btn-md 2xl:btn-lg animate-pulse"
+                            >
+                              <Music4 className="size-4 md:size-6" />
+                              <span className="sr-only">Suno</span>
+                            </a>
+                          </li>
                         </ol>
                         <span className="text-primary flex items-center gap-2">
                           <Copyright className="size-4 lg:size-6" />
@@ -239,80 +253,6 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                 </ol>
 
                 <ol className="navbar-end gap-4">
-                  <li
-                    className="tooltip tooltip-left tooltip-error rtl:tooltip-right"
-                    data-tip="Badges"
-                  >
-                    <a
-                      href="https://www.credly.com/users/youzarsiph"
-                      className="btn rounded-field btn-square btn-sm btn-error md:btn-md 2xl:btn-lg"
-                    >
-                      <BadgeCheck className="size-4 md:size-6" />
-                      <span className="sr-only">Badges</span>
-                    </a>
-                  </li>
-                  <li
-                    className="tooltip tooltip-left tooltip-success rtl:tooltip-right"
-                    data-tip="Certificates"
-                  >
-                    <a
-                      href="https://www.coursera.org/learner/youzarsiph"
-                      className="btn rounded-field btn-square btn-sm btn-success md:btn-md 2xl:btn-lg"
-                    >
-                      <GraduationCap className="size-4 md:size-6" />
-                      <span className="sr-only">Certificates</span>
-                    </a>
-                  </li>
-                  <li
-                    className="tooltip tooltip-left tooltip-warning rtl:tooltip-right"
-                    data-tip="HuggingFace"
-                  >
-                    <a
-                      href="https://huggingface.co/youzarsiph"
-                      className="btn rounded-field btn-square btn-sm btn-warning md:btn-md 2xl:btn-lg"
-                    >
-                      <BrainCircuit className="size-4 md:size-6" />
-                      <span className="sr-only">HuggingFace</span>
-                    </a>
-                  </li>
-                  <li
-                    className="tooltip tooltip-left tooltip-info rtl:tooltip-right"
-                    data-tip="PyPI"
-                  >
-                    <a
-                      href="https://pypi.org/user/youzarsiph/"
-                      className="btn rounded-field btn-square btn-sm btn-info md:btn-md 2xl:btn-lg"
-                    >
-                      <Boxes className="size-4 md:size-6" />
-                      <span className="sr-only">PyPI</span>
-                    </a>
-                  </li>
-                  <li
-                    className="tooltip tooltip-left tooltip-info rtl:tooltip-right"
-                    data-tip="Linked In"
-                  >
-                    <a
-                      href="https://linkedin.com/in/youzarsiph"
-                      className="btn rounded-field btn-square btn-soft btn-sm btn-info md:btn-md 2xl:btn-lg"
-                    >
-                      <Linkedin className="size-4 md:size-6" />
-                      <span className="sr-only">Linked In</span>
-                    </a>
-                  </li>
-
-                  <li
-                    className="tooltip tooltip-left tooltip-primary rtl:tooltip-right"
-                    data-tip="Github"
-                  >
-                    <a
-                      href="https://github.com/youzarsiph"
-                      className="btn rounded-field btn-square btn-sm btn-primary md:btn-md 2xl:btn-lg"
-                    >
-                      <Github className="size-4 md:size-6" />
-                      <span className="sr-only">Github</span>
-                    </a>
-                  </li>
-
                   <li
                     className="tooltip tooltip-left rtl:tooltip-right"
                     data-tip="Close"
