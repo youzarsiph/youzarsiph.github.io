@@ -139,7 +139,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                       <nav className="grid gap-4">
                         <ol className="flex flex-wrap items-center gap-4">
                           <li
-                            className="tooltip tooltip-right tooltip-accent rtl:tooltip-left"
+                            className="tooltip tooltip-accent"
                             data-tip="Badges"
                           >
                             <a
@@ -151,7 +151,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                             </a>
                           </li>
                           <li
-                            className="tooltip tooltip-right tooltip-success rtl:tooltip-left"
+                            className="tooltip tooltip-success"
                             data-tip="Certificates"
                           >
                             <a
@@ -163,7 +163,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                             </a>
                           </li>
                           <li
-                            className="tooltip tooltip-right tooltip-warning rtl:tooltip-left"
+                            className="tooltip tooltip-warning"
                             data-tip="HuggingFace"
                           >
                             <a
@@ -174,10 +174,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                               <span className="sr-only">HuggingFace</span>
                             </a>
                           </li>
-                          <li
-                            className="tooltip tooltip-right tooltip-info rtl:tooltip-left"
-                            data-tip="PyPI"
-                          >
+                          <li className="tooltip tooltip-info" data-tip="PyPI">
                             <a
                               href="https://pypi.org/user/youzarsiph/"
                               className="btn rounded-field btn-square btn-sm btn-info md:btn-md 2xl:btn-lg"
@@ -187,7 +184,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                             </a>
                           </li>
                           <li
-                            className="tooltip tooltip-right tooltip-info rtl:tooltip-left"
+                            className="tooltip tooltip-info"
                             data-tip="Linked In"
                           >
                             <a
@@ -200,7 +197,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                           </li>
 
                           <li
-                            className="tooltip tooltip-right tooltip-primary rtl:tooltip-left"
+                            className="tooltip tooltip-primary"
                             data-tip="Github"
                           >
                             <a
@@ -212,10 +209,7 @@ const RootLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => (
                             </a>
                           </li>
 
-                          <li
-                            className="tooltip tooltip-right tooltip-error rtl:tooltip-left"
-                            data-tip="Suno"
-                          >
+                          <li className="tooltip tooltip-error" data-tip="Suno">
                             <a
                               href="https://suno.com/@youzarsiph"
                               className="btn rounded-field btn-square btn-sm btn-error md:btn-md 2xl:btn-lg animate-pulse"
