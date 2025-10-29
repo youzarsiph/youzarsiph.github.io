@@ -90,11 +90,33 @@ const Poetry = () => (
 
         <div
           role="alert"
-          className="not-prose alert alert-success alert-soft mb-8"
+          className="not-prose alert alert-vertical alert-success alert-soft md:alert-horizontal mb-8"
         >
           <CheckCircle2 className="size-4 lg:size-6" />
           <p>Click the images to listen</p>
         </div>
+
+        <PoemCard
+          src="/before-the-sunrise.jpeg"
+          href="https://suno.com/s/rHUxVJvkqtxvPpgF"
+        />
+        <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
+          <span>بَعْدَ غُرُوبِ الشَّمْسِ وَ قَبْلَ الشُّرُوٓقْ</span>
+          <span>فِي غَسَقِ اللَّيْلِ حِينَ غُيُومًا تَسُوٓقْ</span>
+
+          <span>أَشْكُو مَا أُلَاقِي مِنْ حُبِّهَا وَمَا أَذُوٓقْ</span>
+          <span>فِي قَلْبِي نَارٌ، وَشَوْقٌ حَارٌّ، وَشُقُوٓقْ</span>
+
+          <span>مُنْذُ أَحْبَبْتُكِ قَلْبِي لَفِي الأَحْزَانِ غَرِيٓقْ</span>
+          <span>فِي أَحْلَامٍ وَ آَلَامٍ، وَ قَدِ انْقَطَعَ الطَّرِيٓقْ</span>
+
+          <span>
+            مَا لَهُ فِرَارٌ، وَقَلْبُهُ القَرَارُ، فَكَيْفَ يُطِيٓقْ؟
+          </span>
+          <span>ضَاقَتِ الأَرْضُ فَنَفْسِي وَصَدْرِي يَضِيٓقْ</span>
+        </blockquote>
+
+        <hr />
 
         <PoemCard
           src="/under-the-skies.jpeg"
@@ -158,7 +180,7 @@ const Poetry = () => (
 
         <div
           role="alert"
-          className="not-prose alert alert-info alert-soft mb-8"
+          className="not-prose alert alert-vertical lg:alert-horizontal alert-info alert-soft mb-8"
         >
           <Info className="size-4 lg:size-6" />
           <p>For more check out my profile on Suno</p>
