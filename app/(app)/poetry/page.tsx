@@ -96,6 +96,23 @@ const Poetry = () => (
           <p>Click the images to listen</p>
         </div>
 
+        <PoemCard src="/eyes.jpeg" href="https://suno.com/s/TiUrBlkbGHgnGxjS" />
+        <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
+          <span>لَا أُصَدِّقُ العُيُوٓنْ وَ لَا بُدَّ أَنْ أَكُوٓنْ</span>
+          <span>فِي حِيرَةٍ فَحُبُّهَا فِي قَلْبِي مَكْنُوٓنْ</span>
+
+          <span>أَحُبٌّ ذَا أَمْ صَرْفٌ مِنْ رَيْبِ المَنُوٓنْ</span>
+          <span>إِنَّهُ يُصِمُّ الآَذَانَ ثُمَّ يُعْمِي العُيُوٓنْ</span>
+
+          <span>نَارٌ فِي صَدْرِي وَ اشْتِيَاقٌ ثُمَّ حَنِيٓنْ</span>
+          <span>مِنْ حَرِّهَا لِي آَلَامٌ فِي قَلْبِي وَ أَنِيٓنْ</span>
+
+          <span>أَبْكِي وَلَيْسَ لِي مِنْ بُكَائِي إِلَّا خَنِيٓنْ</span>
+          <span>حُزْنٌ مُكْتَمِنٌ أَفْنَى مِنْ عُمُرِي سِنِيٓنْ</span>
+        </blockquote>
+
+        <hr />
+
         <PoemCard
           src="/before-the-sunrise.jpeg"
           href="https://suno.com/s/rHUxVJvkqtxvPpgF"
