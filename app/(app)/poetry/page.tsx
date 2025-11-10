@@ -175,26 +175,6 @@ const Poetry = () => (
           <span>أَنْزِلْ الشِّفَاءَ، إِنَّ الدَّاءَ فِي قَلْبِي مَكْنُونْ</span>
         </blockquote>
 
-        <hr />
-
-        <PoemCard
-          src="/flame.jpeg"
-          href="https://suno.com/s/Pw8HCHoeZUFymfHS"
-        />
-        <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
-          <span>حُبُّكِ نَارٌ وَلَيْتَنِي لَمْ أَكُنِ الوَقُود</span>
-          <span>كَأَنِّي مُقَيَّدٌ فِي الأَغْلَالِ وَالقُيُود</span>
-
-          <span>أَسِيرٌ يَسِيرُ حَيْثُ يَجُرُّنِي وَيَقُود</span>
-          <span>وَكَمْ أُحِبُّكِ لَيْتَ لِي عِنْدَكِ وُجُود</span>
-
-          <span>غَدَتْ حَيَاتِي كَسَبْعٍ شِدَاد</span>
-          <span>أَفْنَتِ الدُّمُوعَ كَـمَا المِدَاد</span>
-
-          <span>كُلَّمَا رَأَيْتُكِ حُبِّي لَكِ ازْدَاد</span>
-          <span>فَزَادَ مَا يُكِنُّ قَلْبِي مِنْ وِدَاد</span>
-        </blockquote>
-
         <div
           role="alert"
           className="not-prose alert alert-vertical lg:alert-horizontal alert-info alert-soft mb-8"

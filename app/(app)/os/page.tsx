@@ -19,6 +19,29 @@ const OS = () => (
         <h2>Packages</h2>
         <ul>
           <li>
+            <a
+              className="link link-primary"
+              href="https://github.com/youzarsiph/django-allauth-xui"
+            >
+              <strong>
+                <code>django-allauth-xui:</code>
+              </strong>
+            </a>
+            Provides a modern, responsive UI layer for django‑allauth, styled
+            with Tailwind CSS and daisyUI.
+          </li>
+          <li>
+            <a
+              className="link link-primary"
+              href="https://github.com/youzarsiph/code-pilot-cli"
+            >
+              <strong>
+                <code>code-pilot-cli:</code>
+              </strong>
+            </a>
+            AI in your CLI.
+          </li>
+          <li>
             <strong>DRF UI suite:</strong> Reimagined, materialized UI for
             Django REST Framework.
             <ul>
