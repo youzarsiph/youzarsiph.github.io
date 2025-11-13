@@ -96,7 +96,7 @@ const Poetry = () => (
           <p>Click the images to listen</p>
         </div>
 
-        <PoemCard src="/eyes.jpeg" href="https://suno.com/s/TiUrBlkbGHgnGxjS" />
+        <PoemCard src="/eyes.jpeg" href="https://suno.com/s/dFZd5RKmEFzRNxsY" />
         <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
           <span>لَا أُصَدِّقُ العُيُوٓنْ وَ لَا بُدَّ أَنْ أَكُوٓنْ</span>
           <span>فِي حِيرَةٍ فَحُبُّهَا فِي قَلْبِي مَكْنُوٓنْ</span>
@@ -137,7 +137,7 @@ const Poetry = () => (
 
         <PoemCard
           src="/under-the-skies.jpeg"
-          href="https://suno.com/s/3Stz7QLsIjXr9Abp"
+          href="https://suno.com/s/etUczY3IgHe7foGl"
         />
         <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
           <span>فِي ظَلَامِ اللَّيلِ وَ ضَوْءِ النُّجُوٓمْ</span>
