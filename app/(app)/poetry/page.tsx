@@ -1,38 +1,4 @@
-import { CheckCircle2, ChevronRight, Info, PlayCircle } from 'lucide-react'
-import Image from 'next/image'
-
 import { Prose } from '@/app/lib/ui'
-
-const PoemCard = (props: { src: string; href: string }) => (
-  <article className="not-prose card card-sm md:card-md lg:card-lg 2xl:card-xl group overflow-hidden">
-    <figure className="relative size-full py-20">
-      <a
-        href={props.href}
-        className="absolute inset-0 z-10 flex items-center justify-center"
-      >
-        <PlayCircle className="text-primary rounded-box hidden size-1/4 p-4 backdrop-blur-3xl group-hover:block" />
-      </a>
-
-      <Image
-        src={props.src}
-        alt="Background"
-        height={1000}
-        width={1000}
-        className="absolute inset-0 mx-auto h-full blur-2xl"
-      />
-
-      <div className="z-1 flex size-1/2 items-center justify-center">
-        <Image
-          src={props.src}
-          alt="Clip image"
-          height={1000}
-          width={1000}
-          className="rounded-box"
-        />
-      </div>
-    </figure>
-  </article>
-)
 
 const Poetry = () => (
   <div className="container mx-auto grid gap-8 px-4">
@@ -88,108 +54,38 @@ const Poetry = () => (
       <div>
         <h2>Selected lines</h2>
 
-        <div
-          role="alert"
-          className="not-prose alert alert-vertical alert-success alert-soft md:alert-horizontal mb-8"
-        >
-          <CheckCircle2 className="size-4 lg:size-6" />
-          <p>Click the images to listen</p>
-        </div>
+        <h3>Your Love Is Sultan</h3>
+        <iframe
+          className="rounded-box aspect-video"
+          width="100%"
+          src="https://www.youtube.com/embed/rUQBYghpMvM?si=_eF1vz-FNe0VcPbo"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
 
-        <PoemCard src="/eyes.jpeg" href="https://suno.com/s/dFZd5RKmEFzRNxsY" />
-        <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
-          <span>لَا أُصَدِّقُ العُيُوٓنْ وَ لَا بُدَّ أَنْ أَكُوٓنْ</span>
-          <span>فِي حِيرَةٍ فَحُبُّهَا فِي قَلْبِي مَكْنُوٓنْ</span>
+        <h3>Wounds In My Heart</h3>
+        <iframe
+          className="rounded-box aspect-video"
+          width="100%"
+          src="https://www.youtube.com/embed/bzHmU9dKtSI?si=n21tKCwx-n9FOdpQ"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
 
-          <span>أَحُبٌّ ذَا أَمْ صَرْفٌ مِنْ رَيْبِ المَنُوٓنْ</span>
-          <span>إِنَّهُ يُصِمُّ الآَذَانَ ثُمَّ يُعْمِي العُيُوٓنْ</span>
-
-          <span>نَارٌ فِي صَدْرِي وَ اشْتِيَاقٌ ثُمَّ حَنِيٓنْ</span>
-          <span>مِنْ حَرِّهَا لِي آَلَامٌ فِي قَلْبِي وَ أَنِيٓنْ</span>
-
-          <span>أَبْكِي وَلَيْسَ لِي مِنْ بُكَائِي إِلَّا خَنِيٓنْ</span>
-          <span>حُزْنٌ مُكْتَمِنٌ أَفْنَى مِنْ عُمُرِي سِنِيٓنْ</span>
-        </blockquote>
-
-        <hr />
-
-        <PoemCard
-          src="/before-the-sunrise.jpeg"
-          href="https://suno.com/s/rHUxVJvkqtxvPpgF"
-        />
-        <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
-          <span>بَعْدَ غُرُوبِ الشَّمْسِ وَ قَبْلَ الشُّرُوٓقْ</span>
-          <span>فِي غَسَقِ اللَّيْلِ حِينَ غُيُومًا تَسُوٓقْ</span>
-
-          <span>أَشْكُو مَا أُلَاقِي مِنْ حُبِّهَا وَمَا أَذُوٓقْ</span>
-          <span>فِي قَلْبِي نَارٌ، وَشَوْقٌ حَارٌّ، وَشُقُوٓقْ</span>
-
-          <span>مُنْذُ أَحْبَبْتُكِ قَلْبِي لَفِي الأَحْزَانِ غَرِيٓقْ</span>
-          <span>فِي أَحْلَامٍ وَ آَلَامٍ، وَ قَدِ انْقَطَعَ الطَّرِيٓقْ</span>
-
-          <span>
-            مَا لَهُ فِرَارٌ، وَقَلْبُهُ القَرَارُ، فَكَيْفَ يُطِيٓقْ؟
-          </span>
-          <span>ضَاقَتِ الأَرْضُ فَنَفْسِي وَصَدْرِي يَضِيٓقْ</span>
-        </blockquote>
-
-        <hr />
-
-        <PoemCard
-          src="/under-the-skies.jpeg"
-          href="https://suno.com/s/etUczY3IgHe7foGl"
-        />
-        <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
-          <span>فِي ظَلَامِ اللَّيلِ وَ ضَوْءِ النُّجُوٓمْ</span>
-          <span>عَلَى أَعْتَابِ بَابِهِ بَيْنَ يَدَيْهِ أَقُوٓمْ</span>
-
-          <span>
-            لَا مَلْجَأَ إِلَّآ إِلَيْٓهِ ولَا الغَيْٓبُ بِمَعْلُوٓمْ
-          </span>
-          <span>إِلَّآ أَنِّي جِئْتُهُ بِهَمِّ قَلْبِيَ المَكْلُوٓمْ</span>
-
-          <span>قَبْلَ الفَجْرِ وَ حِينَ تُمْطِرُ الغُيُوٓمْ</span>
-          <span>قَلْبِي يُنَادِيهِ أَنْ يَا حَيُّ يَا قَيُّوٓمْ</span>
-
-          <span>كُلٌّ بِأَمْرِكَ مَأْمُورٌ بِحُكْمِكَ مَحْكُوٓمْ</span>
-          <span>إِنِّي لَفِي هُمُوٓمْ، تَسْكُنُنِي الغُمُوٓمْ</span>
-        </blockquote>
-
-        <hr />
-
-        <PoemCard
-          src="/skoon.jpeg"
-          href="https://suno.com/s/Pw8HCHoeZUFymfHS"
-        />
-        <blockquote dir="rtl" className="grid gap-4 md:grid-cols-2">
-          <span>بَعْدَ أَنْ كَانَ قَلْبِي فِي هُدُوءٍ وَ سُكُونْ</span>
-          <span>حَتّى رَأَيْتُكِ فَقُلْتُ مُحَالٌ كَيْفَ يَكُونْ</span>
-
-          <span>أَنْ أُحِبَّ، وَمَا ذَٰلِكَ عَلَى القُلُوبِ يَهُونْ</span>
-          <span>فـأَحْبَبْتُكِ وَ الآنَ أَشْتَاقُ إِلَيْكِ بِجُنُونْ</span>
-
-          <span>وَكَمْ يُؤْلِمُنِي، كَأَنِّي أَنْتَظِرُ رَيْبَ المَنُونْ</span>
-          <span>أَدْرَكَ قَلْبِي، فَنَادَى مَنْ أَمْرُهُ كَافٌ وَنُونْ</span>
-
-          <span>يَا مَنْ إِذَا أَرَادَ يَكُونْ، تَحْفَظُنَا وَ تَصُونْ</span>
-          <span>أَنْزِلْ الشِّفَاءَ، إِنَّ الدَّاءَ فِي قَلْبِي مَكْنُونْ</span>
-        </blockquote>
-
-        <div
-          role="alert"
-          className="not-prose alert alert-vertical lg:alert-horizontal alert-info alert-soft mb-8"
-        >
-          <Info className="size-4 lg:size-6" />
-          <p>For more check out my profile on Suno</p>
-
-          <a
-            href="https://suno.com/@youzarsiph"
-            className="btn btn-sm btn-info rounded-field"
-          >
-            Learn more
-            <ChevronRight className="size-4 rtl:rotate-180" />
-          </a>
-        </div>
+        <h3>In The Darkness Of The Night</h3>
+        <iframe
+          className="rounded-box aspect-video"
+          width="100%"
+          src="https://www.youtube.com/embed/dpFYMc_lhMM?si=uuOXmASEHYtPDOC5"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <div>
